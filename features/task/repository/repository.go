@@ -303,7 +303,7 @@ func (taskRepo *TaskRepository) UploadTask(input entity.UserTaskUploadCore, imag
 	defer file.Close()
 
 	// Define the directory where you want to save the image
-	saveDir := "utils/images/uploadTask"
+	saveDir := "public/images/uploadTask"
 	os.MkdirAll(saveDir, os.ModePerm)
 
 	// Define the file path
@@ -445,7 +445,7 @@ func (taskRepo *TaskRepository) UploadTaskRequest(input entity.UserTaskSubmissio
 	defer file.Close()
 
 	// Define the directory where you want to save the image
-	saveDir := "utils/images/uploadTaskRequest"
+	saveDir := "public/images/uploadTaskRequest"
 	os.MkdirAll(saveDir, os.ModePerm)
 
 	// Define the file path
@@ -737,7 +737,7 @@ func (taskRepo *TaskRepository) UploadTaskReligion(input entity.UserReligionTask
 	defer file.Close()
 
 	// Define the directory where you want to save the image
-	saveDir := "utils/images/uploadTaskReligion"
+	saveDir := "public/images/uploadTaskReligion"
 	os.MkdirAll(saveDir, os.ModePerm)
 
 	// Define the file path
@@ -964,7 +964,7 @@ func (taskRepo *TaskRepository) UploadReligionTaskRequest(input entity.UserRelig
 	defer file.Close()
 
 	// Define the directory where you want to save the image
-	saveDir := "utils/images/uploadTaskReligionRequest"
+	saveDir := "public/images/uploadTaskReligionRequest"
 	os.MkdirAll(saveDir, os.ModePerm)
 
 	// Define the file path

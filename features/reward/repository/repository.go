@@ -41,7 +41,7 @@ func (rewardRepo *RewardRepository) CreateReward(input entity.RewardCore, image 
 	defer file.Close()
 
 	// Define the directory where you want to save the image
-	saveDir := "utils/images/reward"
+	saveDir := "public/images/reward"
 	os.MkdirAll(saveDir, os.ModePerm)
 
 	// Define the file path
@@ -127,7 +127,7 @@ func (rewardRepo *RewardRepository) UpdateReward(rewardId string, data entity.Re
 		defer file.Close()
 
 		// Define the directory where you want to save the image
-		saveDir := "utils/images/reward"
+		saveDir := "public/images/reward"
 		os.MkdirAll(saveDir, os.ModePerm)
 
 		// Define the file path

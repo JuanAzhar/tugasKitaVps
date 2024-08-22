@@ -115,7 +115,7 @@ func (userRepo *userRepository) Register(data entity.UserCore, image *multipart.
 	defer file.Close()
 
 	// Define the directory where you want to save the image
-	saveDir := "utils/images/user"
+	saveDir := "public/images/user"
 	os.MkdirAll(saveDir, os.ModePerm)
 
 	// Define the file path
@@ -247,7 +247,7 @@ func (userRepo *userRepository) UpdateSiswa(id string, data entity.UserCore, ima
 		defer file.Close()
 
 		// Define the directory where you want to save the image
-		saveDir := "utils/images/user"
+		saveDir := "public/images/user"
 		os.MkdirAll(saveDir, os.ModePerm)
 
 		// Define the file path
